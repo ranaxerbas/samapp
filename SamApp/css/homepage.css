@@ -1,0 +1,938 @@
+.app-section, .sam-section {
+    padding: 5%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-wide, .challenges-content, .intro-content, .rental, .app-container, .info-card {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro, .rental, .challenges, .app-section, .sam-section {
+    box-sizing: border-box;
+}
+
+#cookie-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#cookie-banner .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.intro {
+    background-color: #CDBCDB;
+    padding: 3%;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 100px;
+}
+
+.intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    padding: 0;
+}
+
+.intro-left {
+    flex: 1 1 500px;
+    padding: 1rem;
+}
+
+.intro-left-title {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.intro-left-text {
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.intro-left-btn {
+    background-color: #FA7C61;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.intro-left-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.intro-right {
+    flex: 1 1 400px;
+    text-align: center;
+    position: relative;
+}
+
+.intro-right img {
+    max-width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 10;
+    transform: translateY(60px);
+}
+
+.intro .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.intro .wave-bottom svg {
+    width: calc(100% + 1.3px);
+    height: 100px;
+    position: relative;
+    z-index: 5;
+}
+
+.rental {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 10% 5%;
+    height: auto;
+}
+
+.rental-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.rental-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.rental-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rental-right-title {
+    margin-bottom: 1rem;
+    font-size: 3.4rem;
+}
+
+.rental-right-text {
+    font-family: "Pally";
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.rental-right-btn {
+    font-family: "DynaPuff";
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    background: #f47c46;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.rental-right-btn:hover {
+    background-color: #FFFFFF;
+    color: #f47c46;
+    border: 1px solid #f47c46;
+}
+
+.challenges {
+    position: relative;
+    background-color: #d9e8fb;
+    padding: 10% 5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.wave-top, .wave-bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-top {
+    top: 0;
+}
+
+.wave-bottom {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.wave-top svg, .wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.challenges-content {
+    z-index: 1;
+    width: 100%;
+}
+
+.challenges-text {
+    margin-bottom: 40px;
+}
+
+.challenges-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.challenges-subtitle {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.challenges-controls {
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 20px;
+    right: 1rem;
+}
+
+.control-left, .control-right {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.control-left:hover, .control-right:hover {
+    background-color: #f0f0f0;
+}
+
+.challenges-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.challenges-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.challenges-slide {
+    min-width: calc(33.333% - 14px);
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.app-titles {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.app-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #e78351;
+    margin-bottom: 0.5rem;
+}
+
+.app-subtitle {
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-images {
+    position: relative;
+    width: 50%;
+    height: 380px;
+}
+
+.app-images > div {
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.app-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-swim {
+    width: 42%;
+    height: 50%;
+    left: 0;
+    bottom: 10%;
+    z-index: 1;
+}
+
+.image-tennis {
+    width: 42%;
+    height: 60%;
+    left: 15%;
+    top: 0;
+    z-index: 2;
+}
+
+.image-baseball {
+    width: 40%;
+    height: 50%;
+    right: 5%;
+    bottom: 0;
+    z-index: 3;
+}
+
+.blue-square {
+    width: 13%;
+    height: 18%;
+    background-color: #d5e1f7;
+    right: 20%;
+    top: 30%;
+    z-index: 0;
+}
+
+.orange-square {
+    width: 9%;
+    height: 12%;
+    background-color: #e78351;
+    left: 35%;
+    bottom: -8%;
+    z-index: 0;
+}
+
+.app-text {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.app-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.app-text li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.app-text li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #e78351;
+    font-size: 1.5rem;
+    line-height: 1;
+    top: -0.1rem;
+}
+
+.container-wide {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #e77e4d;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.info-card {
+    background-color: #f0f2f5;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.level-info {
+    width: 60%;
+}
+
+.level-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.level-dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.dot-green {
+    background-color: #449d44;
+}
+
+.dot-yellow {
+    background-color: #f0ad4e;
+}
+
+.dot-orange {
+    background-color: #e77e4d;
+}
+
+.dot-red {
+    background-color: #d9534f;
+}
+
+.level-content {
+    display: flex;
+    flex: 1;
+}
+
+.level-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    margin-right: 15px;
+    min-width: 100px;
+}
+
+.level-description {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.phone-container {
+    position: absolute;
+    right: -100px;
+    top: -120px;
+    width: 50%;
+    text-align: center;
+    z-index: 2;
+}
+
+.phone-image {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+.download-btn {
+    background-color: #e77e4d;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.download-btn:hover {
+    background-color: #d86e3d;
+    color: white;
+    text-decoration: none;
+}
+
+
+section.partners {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.partners-title {
+    font-size: 2.8rem;
+    background: #CDBCDB;
+    width: 100%;
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+.partners-title h1 {
+    margin-top: 2.5rem;
+    font-size: 2.8rem;
+
+}
+
+.partners-title .wave-top {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.partners-title .wave-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.line {
+    width: 100%;
+}
+
+.partners-content {
+    background: #CDBCDB;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 18vh;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.partners-scroll {
+    display: flex;
+    gap: 2rem;
+    animation: scrollSponsors 15s linear infinite;
+}
+
+.partner-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.partner-item img {
+    height: 80px;
+    width: auto;
+    min-width: 100px;
+    object-fit: contain;
+}
+
+button a,
+.intro-left-btn a,
+.rental-right-btn a,
+.colors-buttons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scrollSponsors {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1204px) {
+    .intro-left-title{
+        margin: 0 0 3rem 3rem;
+        font-size: 2.6rem;
+    }
+
+    .intro-left-text{
+        margin: 0 0 2.2rem 3rem;
+        font-size: 1.2rem;
+        width: 70%;
+    }
+
+    .intro-left-btn {
+        border-radius: 15px;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-left: 4rem;
+    }
+
+    .rental-right-title{
+        margin: 0 0 3rem 0;
+        font-size: 2.6rem;
+    }
+
+    .rental-right-text{
+        margin: 0 0 2.2rem 0;
+        font-size: 1.2rem;
+        width: 75%;
+    }
+
+    .rental-right-btn {
+        width: 70%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .challenges-slide {
+        min-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .app-images {
+        height: 250px;
+        width: 60%;
+    }
+
+    .image-swim, .image-baseball, .blue-square, .orange-square {
+        display: none;
+        bottom: 0;
+    }
+
+    .image-tennis {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        position: relative;
+        left: 90%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+    .app-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    section {
+        flex-direction: column !important;
+        padding: 5% 3%;
+        height: auto !important;
+        text-align: center;
+        width: 100%;
+    }
+
+    .intro {
+        padding-top: 2rem;
+        margin-bottom: 60px;
+    }
+
+    .intro-left-title {
+        font-size: 1.8rem;
+        margin: 0 0 1rem;
+    }
+
+    .intro-left-text {
+        font-size: 0.9rem;
+    }
+
+    .intro-left-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0;
+    }
+
+    .intro-right {
+        bottom: 0;
+    }
+
+    .rental {
+        flex-direction: column;
+        padding: 5% 3%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rental-left {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .rental-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rental-right {
+        align-items: center;
+    }
+
+    .rental-right-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .rental-right-text {
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .rental-right-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .wave-top, .wave-bottom {
+        height: 40px;
+    }
+
+    .wave-top svg, .wave-bottom svg {
+        height: 40px;
+    }
+
+    .challenges-title {
+        font-size: 1.8rem;
+    }
+
+    .challenges-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .challenges-controls {
+        right: 10px;
+        gap: 10px;
+    }
+
+    .control-left,
+    .control-right {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .challenges-slide {
+        min-width: 100%;
+        height: 220px;
+    }
+
+    .challenges-slides {
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .info-card {
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .level-info {
+        width: 100%;
+        margin-bottom: 30px;
+        order: 2;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .phone-image {
+        max-height: 350px;
+    }
+
+    .level-row {
+        margin-bottom: 15px;
+    }
+
+    .level-content {
+        flex-direction: column;
+        margin-left: 5px;
+    }
+
+    .level-name {
+        margin-bottom: 5px;
+        margin-right: 0;
+        min-width: auto;
+        font-size: 1.1rem;
+    }
+
+    .level-description {
+        font-size: 0.95rem;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .download-btn {
+        width: 90%;
+        text-align: center;
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+
+    .partners {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100vw;
+    }
+
+    .partners-content {
+        width: 100vw;
+        height: 3rem;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .partners-title h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .partners-content {
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .partner-item img {
+        height: 55px;
+        min-width: 60px;
+    }
+}

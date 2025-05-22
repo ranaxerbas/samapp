@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamApp</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../components/basic.css">
+</head>
+<body>
+<header></header>
+<div id="cookie-banner">
+    <span class="close-btn" onclick="closeBanner()">✖</span>
+    Deze website gebruikt cookies om je ervaring te verbeteren.
+</div>
+<section class="intro">
+    <div class="intro-content">
+        <div class="intro-left">
+            <h1 class="intro-left-title">De ultieme sportapp voor jonge talenten!</h1>
+            <p class="intro-left-text">
+                Breng beweging tot leven met <strong>300 instructievideo’s</strong> en <strong>11 bewegingsthema’s</strong>. Ontdek, leer en groei, altijd en overal!
+            </p>
+            <button class="intro-left-btn"><a href="../html/oefeningen.html">START JOUW UITDAGING</a></button>
+        </div>
+        <div class="intro-right">
+            <img src="../assets/images/home1.png" alt="samapp mockup" />
+        </div>
+    </div>
+
+    <div class="wave-bottom">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M0.00,49.98 C150.00,150.00 349.33,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: white;"></path>
+        </svg>
+    </div>
+</section>
+
+
+<section class="rental">
+    <div class="rental-left">
+        <img src="../assets/images/sportmateriaal.jpg" height="591" width="1050" alt="Sportmateriaal"/>
+    </div>
+    <div class="rental-right">
+        <h2 class="rental-right-title">Huur voordelig sportmateriaal via SAM</h2>
+        <p class="rental-right-text">Geen materiaal in huis? Huur via onze shop voordelig en flexibel alles wat je nodig hebt voor SAM-lessen, workshops of kampen.</p>
+        <button class="rental-right-btn"><a href="../html/samshop.html">HUUR HIER</a></button>
+    </div>
+</section>
+
+<section class="challenges">
+    <div class="wave-top">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M0.00,49.98 C150.00,150.00 349.33,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                  style="stroke: none; fill: white;"></path>
+        </svg>
+    </div>
+
+    <div class="challenges-content">
+        <div class="challenges-text">
+            <h1 class="challenges-title">SAM Beweeg, ontdek en groei!</h1>
+            <h2 class="challenges-subtitle">Jij bepaalt het tempo, SAM wijst de weg!</h2>
+            <div class="challenges-controls">
+                <button onclick="prevSlide()" class="control-left">&#9664;</button>
+                <button onclick="nextSlide()" class="control-right">&#9654;</button>
+            </div>
+        </div>
+        <div class="challenges-slider-container">
+            <div class="challenges-slides" id="slider">
+                <img class="challenges-slide" src="../assets/images/illustrations/football.jpg" alt="Challenge 1">
+                <img class="challenges-slide" src="../assets/images/illustrations/basketball.jpg" alt="Challenge 2">
+                <img class="challenges-slide" src="../assets/images/illustrations/gym.jpg" alt="Challenge 3">
+                <img class="challenges-slide" src="../assets/images/illustrations/children.jpg" alt="Challenge 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="wave-bottom">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M0.00,49.98 C150.00,150.00 349.33,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                  style="stroke: none; fill: white;"></path>
+        </svg>
+    </div>
+</section>
+
+<div class="app-section">
+    <div class="app-titles">
+        <h3 class="app-title">Jouw Sport in de app?</h3>
+        <h4 class="app-subtitle">Let's make it happen!</h4>
+    </div>
+    <div class="app-container">
+        <div class="app-images">
+            <div class="image-swim">
+                <img src="../assets/images/illustrations/children.jpg" alt="Swimming children">
+            </div>
+            <div class="image-tennis">
+                <img src="../assets/images/illustrations/gym.jpg" alt="Child playing tennis">
+            </div>
+            <div class="blue-square"></div>
+            <div class="image-baseball">
+                <img src="../assets/images/illustrations/basketball.jpg" alt="Child playing baseball">
+            </div>
+            <div class="orange-square"></div>
+        </div>
+        <div class="app-text">
+            <ul>
+                <li>Breng jouw sport tot leven in het onderwijs.</li>
+                <li>Maak de link tussen bewegingsonderwijs en jouw sport.</li>
+                <li>Laat kinderen spelenderwijs ontdekken en groei als club.</li>
+                <li>Geef leerkrachten en coaches tools met visuele en didactisch sterke oefenstof.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="sam-section">
+    <div class="container-wide">
+        <h1 class="title">LEER MET SAM... Kinderspel!</h1>
+        <div class="info-card">
+            <h2 class="card-title">Binnen elk bewegingsthema ontdek je vier kleurenniveaus.</h2>
+            <div class="content-wrapper">
+                <div class="level-info">
+                    <div class="level-row">
+                        <div class="level-dot dot-green"></div>
+                        <div class="level-content">
+                            <p class="level-name">Groen</p>
+                            <p class="level-description">De <span class="bold-text">eenvoudigste</span> oefeningen om mee te starten.</p>
+                        </div>
+                    </div>
+                    <div class="level-row">
+                        <div class="level-dot dot-yellow"></div>
+                        <div class="level-content">
+                            <p class="level-name">Geel</p>
+                            <p class="level-description">Je beheerst <span class="bold-text">de basis</span>, tijd om verder te groeien.</p>
+                        </div>
+                    </div>
+                    <div class="level-row">
+                        <div class="level-dot dot-orange"></div>
+                        <div class="level-content">
+                            <p class="level-name">Oranje</p>
+                            <p class="level-description">De oefeningen worden <span class="bold-text">uitdagender</span>, durf je het aan?</p>
+                        </div>
+                    </div>
+                    <div class="level-row">
+                        <div class="level-dot dot-red"></div>
+                        <div class="level-content">
+                            <p class="level-name">Rood</p>
+                            <p class="level-description">Voor wie een <span class="bold-text">echte uitdaging</span> zoekt!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-container">
+                    <img src="../assets/images/home2.png" alt="Sam app op smartphone" class="phone-image">
+                </div>
+            </div>
+        </div>
+        <div class="download-buttons">
+            <a href="#" class="download-btn">Download voor android</a>
+            <a href="#" class="download-btn">Download voor iOS</a>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="partners-title">
+        <div class="wave-top">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                <path d="M0.00,49.98 C150.00,150.00 349.33,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                      style="stroke: none; fill: white;"></path>
+            </svg>
+        </div>
+        <h1>MET DANK AAN ONZE PARTNERS</h1>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="partners-content">
+        <div class="partners-scroll" id="partnersContainer">
+        </div>
+    </div>
+</section>
+
+<footer></footer>
+<script src="../components/basic_header_footer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/homepage.js"></script>
+</body>
+</html>

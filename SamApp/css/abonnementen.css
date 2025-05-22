@@ -1,0 +1,68 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abonnementen {
+    text-align: left;
+    padding: 5rem 2rem;
+}
+
+.abonnementen-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "DynaPuff";
+}
+
+.prijsindeling-title {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.abonnementen-kaarten {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.kaart {
+    text-align: center;
+    background-color: #cdbcdb;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 350px;
+    height: 150px;
+    position: relative;
+    font-family: "Pally";
+}
+
+.kaart h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.prijs {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.aanbevolen {
+    border: 3px solid #5a2d82;
+    position: relative;
+}
+
+.label-aanbevolen {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d8d3de;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+

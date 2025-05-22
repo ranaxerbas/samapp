@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samshop</title>
+  <link rel="stylesheet" href="../css/samshop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../components/basic.css">
+</head>
+<body>
+<header></header>
+<section class="shop">
+  <div class="shop-first">
+    <div class="shop-first-left">
+      <h1>SAMSHOP</h1>
+      <p>
+        Alles wat je nodig hebt voor de SAM-oefeningen, vind je hier.
+        <br>
+        Voordelig, flexibel en direct inzetbaar voor lessen, kampen of trainingen.
+      </p>
+    </div>
+    <div class="shop-first-right">
+      <a href="../html/samshopCart.html" class="cart-link">
+        <img src="../assets/icons/shopping-cart.png" alt="shopping icon">
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="shop-second">
+    <h2 class="shop-second-title">TE KOOP</h2>
+    <button class="shop-btn">KLEDIJ</button>
+  </div>
+
+  <div class="shop-third">
+    <div class="shop-third-left">
+      <h3>KLEDIJ</h3>
+      <div class="shop-items grid-view"></div>
+    </div>
+    <div class="carousel-wrapper">
+    </div>
+
+    <div class="shop-forth">
+      <h2 class="shop-forth-title">TE HUUR</h2>
+      <button class="shop-btn">MULTI MEDIA</button>
+      <button class="shop-btn">SPORTMATERIAAL</button>
+    </div>
+
+    <div class="shop-five">
+      <div class="shop-five-left">
+        <h3>MULTI MEDIA</h3>
+        <div class="shop-items grid-view"></div>
+      </div>
+    </div>
+
+    <div class="shop-six">
+      <div class="shop-six-left">
+        <h3>SPORTMATERIAAL</h3>
+        <div class="shop-items grid-view"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="cart-message" class="cart-message hidden"></div>
+<footer></footer>
+<script src="../components/basic_header_footer.js"></script>
+<script type="module" src="../js/samshop.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+.header-bg {
+    background-color: #d8bfe7;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header-bg h1 {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.main-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.text-center {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.btn-category {
+    margin: 0.2rem;
+    color: #FFFFFF;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.btn-category-container {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.section-label {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.bg-eenvoudig {
+    background-color: #4CAF50 !important;
+}
+
+.bg-basis {
+    background-color: #DDCA2A !important;
+}
+
+.bg-uitdagender {
+    background-color: #E0801C !important;
+}
+
+.bg-realdeal {
+    background-color: #C0392B !important;
+}
+
+
+.exercise img {
+    width: 100%;
+    max-width: 100%;
+    min-height: 350px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+.exercise-title {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.exercise {
+    padding: 10px;
+    text-align: center;
+}
+
+.exercise img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+.exercise-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h3.eenvoudig, h3.basis, h3.uitdagender, h3.realdeal {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h3.eenvoudig {
+    background-color: #239127;
+    color: white;
+}
+
+h3.basis {
+    background-color: #DFD119;
+    color: black;
+}
+
+h3.uitdagender {
+    background-color: #E07400;
+    color: white;
+}
+
+h3.realdeal {
+    background-color: #DB1D16;
+    color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .btn-category-container {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-label {
+        width: auto;
+        text-align: center;
+    }
+
+    .exercise img {
+        height: 150px;
+    }
+
+    .btn-category-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        justify-items: center;
+    }
+
+    .btn-category {
+        width: 100%;
+        max-width: 160px;
+    }
+}

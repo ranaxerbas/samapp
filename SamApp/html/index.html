@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SamApp Inloggen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="module" src="../js/api.service.js" defer></script>
+  <script type="module" src="../js/script.js" defer></script>
+</head>
+<body>
+<div class="login-container">
+  <div class="login-box" id="loginBox">
+    <h2>Inloggen</h2>
+    <form id="loginForm">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="Voer je e-mail in" required>
+
+      <label for="password">Wachtwoord</label>
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Voer je wachtwoord in" required>
+        <span class="toggle-password" onclick="togglePassword('password')">🔒</span>
+      </div>
+
+      <div class="forgot-password-link">
+        <a href="#" id="forgotPasswordLink">Wachtwoord vergeten?</a>
+      </div>
+
+      <button type="submit">INLOGGEN</button>
+
+      <div class="register-link">
+        <a href="#" id="showRegister"> OF REGISTREREN ?</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="register-box" id="registerBox" style="display: none;">
+    <h2>Registreren</h2>
+    <form id="registerForm">
+      <label for="firstName">Voornaam</label>
+      <input type="text" id="firstName" placeholder="Voer je voornaam in" required>
+
+      <label for="lastName">Achternaam</label>
+      <input type="text" id="lastName" placeholder="Voer je achternaam in" required>
+
+      <label for="dob">Geboortedatum</label>
+      <input type="date" id="dob" required>
+
+      <label for="registerEmail">E-mail</label>
+      <input type="email" id="registerEmail" placeholder="Voer je e-mail in" required>
+
+      <label for="registerPassword">Wachtwoord</label>
+      <div class="password-container">
+        <input type="password" id="registerPassword" placeholder="Kies een wachtwoord" required>
+        <span class="toggle-password" onclick="togglePassword('registerPassword')">🔒</span>
+      </div>
+
+      <label for="confirmPassword">Bevestig wachtwoord</label>
+      <div class="password-container-verify">
+        <input type="password" id="confirmPassword" placeholder="Bevestig wachtwoord" required>
+        <span class="toggle-password" onclick="togglePassword('confirmPassword')">🔒</span>
+      </div>
+
+      <button type="submit">AANMELDEN</button>
+
+      <div class="back-link">
+        <a href="../html/index.html" class="backToLoginLink">Terug naar inloggen</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="forgot-password-box" id="forgotPasswordBox" style="display: none;">
+    <h2>Wachtwoord vergeten</h2>
+    <form id="forgotPasswordForm">
+      <label for="forgotEmail">E-mail</label>
+      <input type="email" id="forgotEmail" placeholder="Voer je e-mail in" required>
+
+      <button type="submit">STUUR WACHTWOORD RESET</button>
+
+      <div class="back-link">
+        <a href="../html/index.html" class="backToLoginLink">Terug naar inloggen</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

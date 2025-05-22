@@ -1,0 +1,71 @@
+<head>
+  <style>
+    .navbar-wrapper {
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    .navbar {
+      white-space: nowrap;
+      flex-wrap: nowrap !important;
+    }
+
+    .nav-left li, .nav-right li, .nav-right button {
+      white-space: nowrap;
+    }
+
+    .navbar * {
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<div class="navbar-wrapper">
+  <nav class="navbar " style="background-color: #d8bfe7;">
+    <ul class="nav-left">
+      <li><a href="../html/homepage.html">Home</a></li>
+      <li><a href="../html/overOns.html">Over ons</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li><a href="../html/oefeningen.html">Oefeningen</a></li>
+    </ul>
+
+    <div class="logo-container">
+      <img onclick="showPage('Home')" src="../assets/images/logo/logo_wit.png" alt="logo" class="logo">
+    </div>
+
+    <div class="nav-right">
+      <ul>
+        <li><a href="../html/samshop.html">Samshop</a></li>
+        <li><a href="../html/abonnementen.html">Abonnementen</a></li>
+        <li><button class="download-btn"><a target="_blank" href="https://youtu.be/dQw4w9WgXcQ?si=6_O3R4NIIHUexYaD">Download onze app</a></button></li>
+      </ul>
+
+
+      <a href="../html/profiel.html" class="profile-btn">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.5655 13.5979C12.4955 13.5879 12.4055 13.5879 12.3255 13.5979C10.5655 13.5379 9.16553 12.0979 9.16553 10.3279C9.16553 8.51792 10.6255 7.04792 12.4455 7.04792C14.2555 7.04792 15.7255 8.51792 15.7255 10.3279C15.7155 12.0979 14.3255 13.5379 12.5655 13.5979Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M19.1851 20.1979C17.4051 21.8279 15.0451 22.8179 12.4451 22.8179C9.84508 22.8179 7.48508 21.8279 5.70508 20.1979C5.80508 19.2579 6.40508 18.3379 7.47508 17.6179C10.2151 15.7979 14.6951 15.7979 17.4151 17.6179C18.4851 18.3379 19.0851 19.2579 19.1851 20.1979Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12.4453 22.8179C17.9682 22.8179 22.4453 18.3408 22.4453 12.8179C22.4453 7.29507 17.9682 2.81792 12.4453 2.81792C6.92246 2.81792 2.44531 7.29507 2.44531 12.8179C2.44531 18.3408 6.92246 22.8179 12.4453 22.8179Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Profiel</span>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<nav class="mobile-navbar">
+  <div class="mobile-logo">
+    <img src="../assets/images/logo/logo_wit.png" alt="logo">
+  </div>
+  <div class="hamburger-icon" onclick="toggleMobileMenu()">&#9776;</div>
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="../html/homepage.html">Home</a></li>
+    <li><a href="../html/overOns.html">Over ons</a></li>
+    <li><a href="../html/contact.html">Contact</a></li>
+    <li><a href="../html/oefeningen.html">Oefeningen</a></li>
+    <li><a href="../html/samshop.html">Samshop</a></li>
+    <li><a href="../html/abonnementen.html">Abonnementen</a></li>
+    <li><a href="../html/index.html">Profiel</a></li>
+  </ul>
+</nav>
+

@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Pally";
+    src: url("../assets/fonts/Pally_Complete/Fonts/TTF/Pally-Variable.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "DynaPuff";
+    src: url("../assets/fonts/DynaPuff/DynaPuff-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto;
+    margin: 0;
+}
+
+body, p {
+    font-family: "Pally";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DynaPuff";
+}
+
+.navbar-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.navbar-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    background-color: #d8bfe7;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    flex-wrap: nowrap !important;
+    overflow: visible;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 0 15px;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-left, .nav-right ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.download-btn {
+    background-color: #f47c46;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.8em 1em;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.profile-btn {
+    background-color: #5392E9;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.8em 1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.profile-btn span {
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        gap: 30px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 16px;
+    }
+
+    .mobile-navbar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+    .navbar {
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .nav-left, .nav-right ul {
+        gap: 15px;
+    }
+
+    .logo-container {
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 160px;
+        min-width: 160px;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 14px;
+    }
+
+    .download-btn,
+    .profile-btn {
+        font-size: 13px;
+        padding: 0.7em 0.9em;
+    }
+
+    .profile-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .mobile-navbar {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .contact {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 5%;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+
+    .contact-buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-info ul li {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .contact-details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-details ul li {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .navbar {
+        padding: 12px 1rem;
+        gap: 10px;
+    }
+
+    .nav-left, .nav-right ul {
+        gap: 10px;
+    }
+
+    .logo-container {
+        padding: 0 5px;
+    }
+
+    .logo {
+        width: 140px;
+        min-width: 140px;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 12px;
+    }
+
+    .download-btn,
+    .profile-btn {
+        font-size: 11px;
+        padding: 0.6em 0.8em;
+    }
+
+    .profile-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .profile-btn span {
+        font-size: 11px;
+    }
+
+    .mobile-navbar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar-wrapper {
+        display: none;
+    }
+
+    .mobile-navbar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #CDBCDB;
+    }
+
+    .mobile-logo img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    .hamburger-icon {
+        font-size: 2.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background-color: #CDBCDB;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1000;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .mobile-menu li {
+        list-style: none;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.6rem;
+        display: block;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+}
+
+
+.contact {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 5%;
+    box-sizing: border-box;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.contact-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.contact-btn {
+    background-color: #5a2d82;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "DynaPuff";
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-buttons button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #e67e47;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.contact-info ul,
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li,
+.contact-details ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .contact-buttons {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 481px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-info ul,
+    .contact-details ul {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .contact-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 1rem;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact-buttons button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .contact-info ul li,
+    .contact-details ul li {
+        font-size: 1rem;
+    }
+}
+
+
+.hidden-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #CDBCDB;
+    color: #000000;
+}
+
+.footer-left, .footer-right {
+    font-size: 14px;
+}
+
+.footer-left {
+    display: flex;
+    margin-left: 3rem;
+    gap: 2rem;
+}
+
+footer .footer-left a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .footer-left a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+
+.footer-right {
+    margin-right: 4rem;
+}
+
+.footer-right span {
+    font-weight: bold;
+}
+
+.arrow-up {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border: 2px solid #CDBCDB;
+    background-color: #cdbcdb;
+    border-radius: 5%;
+}
+
+.arrow-up-img {
+    width: 50px;
+    height: 45px;
+}
+
+.arrow-up-img:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,415 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.faq-header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-header p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.faq-items-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.faq-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.faq-question {
+    background-color: #f78c5d;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+}
+
+.faq-question::after {
+    content: '▼';
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    display: none;
+    border-top: 1px solid #ccc;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+.formuliersectie {
+    padding: 0 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulier-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+}
+
+.contactformulier {
+     background-color: rgba(205, 225, 253, 0.25);
+     padding: 2%;
+     border-radius: 10px;
+     flex: 1 1 100%;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+     border: 2px dashed #cdb5d0;
+ }
+
+.nieuwsbrief {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(205, 225, 253, 0.25);
+    border-radius: 10px;
+    flex: 1 1 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 2px dashed #cdb5d0;
+    flex-wrap: wrap;
+}
+
+.nieuwsbrief-afbeelding {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nieuwsbrief-afbeelding img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nieuwsbrief-inhoud {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nieuwsbrief h2, .contactformulier h3 {
+    font-family: "DynaPuff", cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.nieuwsbrief p, .contactformulier p {
+    margin-bottom: 1.5rem;
+}
+
+.nieuwsbrief input, .contactformulier input, .contactformulier textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Pally", sans-serif;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Pally", sans-serif;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-btn1 {
+    background-color: #f78c5d;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 50px;
+    width: 15%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "DynaPuff", cursive;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-btn1 i {
+    margin-right: 8px;
+}
+
+.subscribe-btn {
+    background-color: #f78c5d;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "DynaPuff", cursive;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.maps-section{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.maps-container {
+    width: 100%;
+    border: 2px dashed #cdb5d0;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.maps-container h3 {
+    font-family: "DynaPuff", cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.maps-container p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.google-map {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .formulier-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nieuwsbrief {
+        flex-direction: column;
+    }
+
+    .nieuwsbrief-afbeelding,
+    .nieuwsbrief-inhoud {
+        flex: 1 1 100%;
+    }
+
+    .contactformulier {
+        flex: 1 1 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq {
+        padding: 5% 3%;
+        align-items: center;
+    }
+
+    .faq-header {
+        text-align: center;
+        width: 100%;
+    }
+
+    .faq-header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .faq-header h4 {
+        font-size: 1.1rem;
+    }
+
+    .faq-content {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .faq-content-left,
+    .faq-content-right {
+        width: 100%;
+    }
+
+    .faq-content p {
+        font-size: 1rem;
+        padding: 0.8rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formuliersectie {
+        padding: 1.5rem 4%;
+    }
+
+    .formulier-container {
+        gap: 1rem;
+    }
+
+    .contactformulier,
+    .nieuwsbrief {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 0.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.85rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .contactformulier h3,
+    .nieuwsbrief h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contactformulier p,
+    .nieuwsbrief p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    input,
+    textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    textarea {
+        min-height: 80px;
+    }
+
+    .contact-btn1,
+    .subscribe-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .nieuwsbrief {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .nieuwsbrief-inhoud input {
+        margin-bottom: 0.7rem;
+    }
+
+    .nieuwsbrief-afbeelding {
+        display: none;
+    }
+
+    .nieuwsbrief-afbeelding img {
+        max-height: 120px;
+        object-fit: contain;
+    }
+}
+

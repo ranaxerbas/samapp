@@ -1,0 +1,251 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.exercises-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.exercises-first-left {
+    flex: 1;
+}
+
+.exercises-title {
+    font-size: 4.15rem;
+    font-weight: bold;
+}
+
+.exercises-subtitle {
+    font-family: "Pally";
+    font-size: 1.5rem;
+}
+
+.exercise-first-right {
+    flex-shrink: 0;
+}
+
+.exercises-btn {
+    padding: 3.2rem 2rem;
+    width: 100%;
+    background-color: #cdbcdb;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: "DynaPuff";
+    box-shadow: 4px 6px 6px #e3d4f1;
+}
+
+.exercises-btn:hover {
+    color: #cdbcdb;
+    background-color: #FFFFFF;
+    border: 2px solid #cdbcdb;
+}
+
+.challenges,
+.challenges2,
+.challenges3,
+.challenges4,
+.challenges5,
+.challenges6{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5% 5%;
+    height: auto;
+}
+
+.challenges-header {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+.challenges-titles {
+    text-align: center;
+    max-width: 100%;
+}
+
+.challenges-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.challenges-slider-container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.challenges-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.challenges-slider {
+    display: flex;
+    gap: 1rem;
+}
+
+.challenges-slide {
+    flex: 0 0 48%;
+    height: 350px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.challenges-slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .challenges-slide {
+        flex: 0 0 30%;
+    }
+
+    .challenges-slider-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .exercises-first {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 8%;
+    }
+
+    .exercises-title {
+        font-size: 2.5rem;
+    }
+
+    .exercises-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .exercises-btn {
+        padding: 1.5rem 2rem;
+    }
+
+    .challenges-title {
+        font-size: 1.8rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    .challenges-slider-container {
+        width: 100%;
+    }
+
+    .challenges-slides {
+        gap: 1rem;
+    }
+
+    .challenges-slide {
+        flex: 0 0 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .exercises-first {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 10%;
+    }
+
+    .exercises-title {
+        font-size: 2rem;
+    }
+
+    .exercises-subtitle {
+        font-size: 1rem;
+    }
+
+    .exercises-btn {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+        width: 100%;
+    }
+
+    .challenges,
+    .challenges2,
+    .challenges3,
+    .challenges4,
+    .challenges5,
+    .challenges6 {
+        height: auto;
+        padding: 10% 5% 5% 5%;
+    }
+
+    .challenges-header {
+        margin-bottom: 10px;
+    }
+
+    .challenges-title {
+        font-size: 1.5rem;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    .challenges-slide {
+        flex: 0 0 100%;
+        height: 300px;
+    }
+
+    .challenges-slides {
+        gap: 0.5rem;
+    }
+
+    .challenges-slider-container {
+        width: 100%;
+    }
+
+    .challenges-btn {
+        margin: 0.1rem;
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .challenges-slide-counter {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .challenges-controls {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
