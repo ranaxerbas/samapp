@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "Pally";
-    src: url("../assets/fonts/Pally_Complete/Fonts/TTF/Pally-Variable.ttf") format("truetype");
+    src: url("../assets/fonts/pally_Complete/fonts/ttf/Pally-Variable.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "DynaPuff";
-    src: url("../assets/fonts/DynaPuff/DynaPuff-VariableFont_wdth,wght.ttf") format("truetype");
+    src: url("../assets/fonts/dynaPuff/DynaPuff-VariableFont_wdth,wght.ttf") format("truetype");
 }
 
 button a {

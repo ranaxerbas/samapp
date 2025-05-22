@@ -3,9 +3,9 @@ const challenges = [
         title: "Balsport",
         images: [
             { src: "../assets/images/illustrations/voetal.jpg",id: "Voetbal", alt: "Challenge 1", link: "../html/oefeningenDetail.html" },
-            { src: "../assets/images/illustrations/basketballe.webp",id: "Basketbal", alt: "Challenge 2", link: "../html/oefeningenDetail.html" },
+            { src: "../assets/images/illustrations/basketballe.jpg",id: "Basketbal", alt: "Challenge 2", link: "../html/oefeningenDetail.html" },
             { src: "../assets/images/illustrations/tennis.jpg",id: "Tennis", alt: "Challenge 3", link: "../html/oefeningenDetail.html" },
-            { src: "../assets/images/illustrations/vollebal.webp",id: "Volleybal", alt: "Challenge 4", link: "../html/oefeningenDetail.html" }
+            { src: "../assets/images/illustrations/vollebal.jpg",id: "Volleybal", alt: "Challenge 4", link: "../html/oefeningenDetail.html" }
         ]
     },
     {
@@ -30,7 +30,7 @@ const challenges = [
         images: [
             { src: "../assets/images/illustrations/schoolslag.jpeg",id: "Schoolslag", alt: "Challenge 1", link: "../html/oefeningenDetail.html" },
             { src: "../assets/images/illustrations/crawl.jpg",id: "Crawl", alt: "Challenge 2", link: "../html/oefeningenDetail.html" },
-            { src: "../assets/images/illustrations/surfen.avif",id: "Surfen", alt: "Challenge 3", link: "../html/oefeningenDetail.html" },
+            { src: "../assets/images/illustrations/surfen.jpg",id: "Surfen", alt: "Challenge 3", link: "../html/oefeningenDetail.html" },
             { src: "../assets/images/illustrations/kayakken.jpg",id: "Kayakken", alt: "Challenge 4", link: "../html/oefeningenDetail.html" }
         ]
     },
@@ -46,10 +46,10 @@ const challenges = [
         title: "Buitensporten",
         images: [
             { src: "../assets/images/illustrations/lopen.jpg",id: "Lopen", alt: "Challenge 1", link: "../html/oefeningenDetail.html" },
-            { src: "../assets/images/illustrations/skaten.webp",id: "Skaten", alt: "Challenge 2", link: "../html/oefeningenDetail.html" },
+            { src: "../assets/images/illustrations/skaten.jpg",id: "Skaten", alt: "Challenge 2", link: "../html/oefeningenDetail.html" },
             { src: "../assets/images/illustrations/paardrijden.jpg",id: "Paardrijden", alt: "Challenge 3", link: "../html/oefeningenDetail.html" },
             { src: "../assets/images/illustrations/boogschieten.jpg",id: "Boogschieten", alt: "Challenge 4", link: "../html/oefeningenDetail.html" },
-            { src: "../assets/images/illustrations/honkbal.png",id: "Honkbal", alt: "Challenge 5", link: "../html/oefeningenDetail.html" }
+            { src: "../assets/images/illustrations/honkbal.jpg",id: "Honkbal", alt: "Challenge 5", link: "../html/oefeningenDetail.html" }
         ]
     }
 ];
