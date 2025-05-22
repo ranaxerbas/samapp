@@ -20,7 +20,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #333;
-    color: white;
+    color: #FFFFFF;
     padding: 20px 30px;
     border-radius: 10px;
     z-index: 9999;
@@ -34,7 +34,7 @@
     position: absolute;
     top: 8px;
     right: 12px;
-    color: white;
+    color: #FFFFFF;
     cursor: pointer;
     font-weight: bold;
 }
@@ -238,12 +238,12 @@ button {
 }
 
 .challenges-text {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .challenges-title {
     font-size: 2.5rem;
-    color: white;
+    color: #FFFFFF;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -266,7 +266,7 @@ button {
 }
 
 .control-left, .control-right {
-    background-color: white;
+    background-color: #FFFFFF;
     border: none;
     width: 40px;
     height: 40px;
@@ -534,7 +534,7 @@ button {
 
 .download-btn {
     background-color: #e77e4d;
-    color: white;
+    color: #FFFFFF;
     padding: 15px 30px;
     border-radius: 30px;
     font-size: 1.1rem;
@@ -547,7 +547,7 @@ button {
 
 .download-btn:hover {
     background-color: #d86e3d;
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -614,16 +614,6 @@ section.partners {
     display: flex;
     gap: 2rem;
     animation: scrollSponsors 15s linear infinite;
-}
-
-.partner-item {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 10px;
 }
 
 .partner-item img {

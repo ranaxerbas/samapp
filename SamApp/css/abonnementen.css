@@ -25,32 +25,7 @@ section {
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-}
 
-.kaart {
-    text-align: center;
-    background-color: #cdbcdb;
-    padding: 2rem;
-    border-radius: 15px;
-    width: 350px;
-    height: 150px;
-    position: relative;
-    font-family: "Pally";
-}
-
-.kaart h3 {
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.prijs {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.aanbevolen {
-    border: 3px solid #5a2d82;
-    position: relative;
 }
 
 .label-aanbevolen {

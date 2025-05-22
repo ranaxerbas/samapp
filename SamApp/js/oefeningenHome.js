@@ -1,4 +1,18 @@
 import api from "./api.service.js"
+const dummyResponse=
+    {
+        "message": "Succesfully gathered excercisess data (rows affected: 1)",
+        "data": [
+            {
+                "Id": 29,
+                "Sport": "Voetbal",
+                "Name": "potten stamp",
+                "Grade": 1,
+                "Description": "doe mawa",
+                "Video": "https://www.youtube.com/embed/8Yv7SPhTKcw?si=k_Z6YulUZpIs-Hkc"
+            }
+        ]
+    }
 
 const sport ="";
 window.addEventListener('load', voegtoe);
@@ -17,13 +31,13 @@ function ColorGet(grade) {
     }
 }
 async function voegtoe() {
-    const params = new URLSearchParams(window.location.search);
-    const exerciseId = params.get("exerciseId");
-    const sportId = params.get("sportId");
-
-    const response = await api.ExeGetOneSport(sportId, exerciseId);
-    const oefeningData = Array.isArray(response.data) ? response.data : [response.data];
-    // const oefeningData = Array.isArray(dummyResponse.data) ? dummyResponse.data : [dummyResponse.data];
+    // const params = new URLSearchParams(window.location.search);
+    // const exerciseId = params.get("exerciseId");
+    // const sportId = params.get("sportId");
+    //
+    // const response = await api.ExeGetOneSport(sportId, exerciseId);
+    // const oefeningData = Array.isArray(response.data) ? response.data : [response.data];
+    const oefeningData = Array.isArray(dummyResponse.data) ? dummyResponse.data : [dummyResponse.data];
 
     console.log("Loaded exercises:", oefeningData);
 

@@ -43,8 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const cartContainer = document.getElementById("cart-container");
     const cartTotal = document.getElementById("cart-total");
+    const cartContainer = document.getElementById("cart-container");
+
 
     function saveCartAndReload() {
         localStorage.setItem("cart", JSON.stringify(cart));

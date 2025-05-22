@@ -75,9 +75,6 @@ section {
     transition: transform 0.3s ease;
 }
 
-.faq-question.active::after {
-    transform: rotate(180deg);
-}
 
 .faq-answer {
     background-color: #fff;
@@ -323,11 +320,6 @@ textarea {
         flex-direction: column;
         width: 100%;
         gap: 1rem;
-    }
-
-    .faq-content-left,
-    .faq-content-right {
-        width: 100%;
     }
 
     .faq-content p {
